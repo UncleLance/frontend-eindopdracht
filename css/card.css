@@ -1,0 +1,10 @@
+.card {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+}
+
+.cards__overview {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 15px;
+}
