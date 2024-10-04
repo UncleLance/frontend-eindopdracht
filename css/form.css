@@ -1,0 +1,51 @@
+form {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+}
+
+label, legend {
+    font-size: var(--default-font-size);
+    font-family: var(--default-font);
+    margin-bottom: 7.5px;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 7.5px;
+}
+
+.form__group--half {
+    flex: 0 0 50%;
+
+}
+
+.form__groupset {
+    margin-right: 30px;
+}
+
+.form__groupset:last-of-type {
+    margin-right: 0;
+}
+
+.form__groupset input {
+    margin-right: 15px;
+}
+
+.form__groupset-container {
+    display: flex;
+}
+
+
+/* Inputs */
+
+.input__text, .input__datetime, select, textarea{
+    padding: 7.5px;
+}
+
+fieldset {
+    border: none;
+}

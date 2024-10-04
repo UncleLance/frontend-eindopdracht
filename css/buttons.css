@@ -1,0 +1,30 @@
+.btn {
+    display: inline-block;
+    padding: 1.5rem 2.5rem;
+    border-radius: 6px;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-primary: var(--raffia);
+        --color-secondary: var(--lucky);
+        --color-tertiary: var(--golden-brown);
+        --color-quaternary: var(--pine-cone);
+    }
+
+    .btn--primary {
+        background-color: var(--color-primary);
+    }
+
+    .btn--secondary {
+        background-color: var(--color-secondary);
+    }
+
+    .btn--tertiary {
+        background-color: var(--color-tertiary);
+    }
+
+    .btn--quaternary {
+        background-color: var(--color-quaternary);
+    }
+}

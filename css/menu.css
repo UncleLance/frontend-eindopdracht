@@ -6,7 +6,7 @@
 }
 
 .menu__nav {
-    background-color: #b3ff00;
+    background-color: var(--color-quaternary);
 }
 
 .menu__logo {
@@ -33,20 +33,5 @@
     height: 100%;
     align-items: center;
     padding: 5px 15px;
-}
-
-
-.footer__menu {
-    background-color: #b3ff00;
-    padding: 30px 0;
-}
-
-.footer__menu-list {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-.footer__menu-link{
-    padding: 0 7.5px;
+    
 }

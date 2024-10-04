@@ -1,3 +1,13 @@
+:root{
+    --default-font: "Roboto", sans-serif;
+    --default-heading-font: "Arvo", sans-serif;
+    --default-font-size: 1.6rem;
+}
+
+h1,h2,h3 {
+    font-family: var(--default-heading-font);
+}
+
 h1 {
     font-size: 4rem;
 }
@@ -10,8 +20,9 @@ h3 {
     font-size: 2.6rem;
 }
 
-p, a:not([class]), b, i, strong, em, li {
-    font-size: 1.6rem;
+p, a, b, i, strong, em, li {
+    font-size: var(--default-font-size);
+    font-family: var(--default-font);
 }
 
 a {

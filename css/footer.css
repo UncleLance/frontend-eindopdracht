@@ -1,0 +1,28 @@
+footer {
+    background-color: var(--color-quaternary);
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__social {
+    display: flex;
+    list-style: none;
+}
+
+.footer__menu {
+    padding: 30px 0;
+}
+
+.footer__menu-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer__menu-link{
+    padding: 0 7.5px;
+}

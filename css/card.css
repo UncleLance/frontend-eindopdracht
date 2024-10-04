@@ -1,10 +1,45 @@
 .card {
     display: grid;
-    grid-template-rows: 1fr auto 1fr;
+    grid-template-rows: 1fr minmax(auto, 1fr) auto;
+    grid-template-areas: "header" 
+                        "body" 
+                        "footer";
+    gap: 15px;
+    max-height: 69em;
 }
 
-.cards__overview {
+.card__overview {
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 1fr));
     gap: 15px;
+}
+
+/* Header section */
+.card__header {
+    grid-area: header;
+}
+
+.card__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Body section */
+.card__body {
+    grid-area: body;
+    padding: 0 30px;
+}
+
+/* Footer section */
+.card__footer {
+    grid-area: footer;
+    padding: 0 30px 30px;
+}
+
+.card__btn {
+    padding: 1.5rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
 }

@@ -1,0 +1,124 @@
+:root {
+    /* Colors */
+    --white: #fff;
+    --black: #000;
+    --nero: #292929;
+
+    /* Light colors */
+    --raffia: #decca6;
+    --lucky: #a4a726;
+    --golden-brown: #945b14;
+    --pine-cone: #706454;
+
+    /* Dark colors */
+    --coffee: #726855;
+    --verdun-green: #43450F;
+    --brown-pod: #381d0a;
+    --space-shuttle: #484036;
+}
+
+.txt-c--white {
+    color: var(--white);
+}
+
+.txt-c--black {
+    color: var(--black);
+}
+
+.txt-c--nero {
+    color: var(--nero);
+}
+
+.bg-c--white {
+    background-color: var(--white);
+}
+
+.bg-c--black {
+    background-color: var(--black);
+}
+
+.bg-c--nero {
+    background-color: var(--nero);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-primary: var(--raffia);
+        --color-secondary: var(--lucky);
+        --color-tertiary: var(--golden-brown);
+        --color-quaternary: var(--pine-cone);
+    }
+
+    .txt-c--primary {
+        color: var(--color-primary);
+    }
+
+    .txt-c--secondary {
+        color: var(--color-secondary);
+    }
+
+    .txt-c--tertiary {
+        color: var(--color-tertiary);
+    }
+
+    .txt-c--quaternary {
+        color: var(--color-quaternary);
+    }
+
+    .bg-c--primary {
+        background-color: var(--color-primary);
+    }
+
+    .bg-c--secondary {
+        background-color: var(--color-secondary);
+    }
+
+    .bg-c--tertiary {
+        background-color: var(--color-tertiary);
+    }
+
+    .bg-c--quaternary {
+        background-color: var(--color-quaternary);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-primary: var(--coffee);
+        --color-secondary: var(--verdun-green);
+        --color-tertiary: var(--brown-pod);
+        --color-quaternary: var(--space-shuttle);
+    }
+
+    .txt-c--primary {
+        color: var(--color-primary);
+    }
+
+    .txt-c--secondary {
+        color: var(--color-secondary);
+    }
+
+    .txt-c--tertiary {
+        color: var(--color-tertiary);
+    }
+
+    .txt-c--quaternary {
+        color: var(--color-quaternary);
+    }
+
+    .bg-c--primary {
+        background-color: var(--color-primary);
+    }
+
+    .bg-c--secondary {
+        background-color: var(--color-secondary);
+    }
+
+    .bg-c--tertiary {
+        background-color: var(--color-tertiary);
+    }
+
+    .bg-c--quaternary {
+        background-color: var(--color-quaternary);
+    }
+}
