@@ -13,101 +13,120 @@
     <body>
         <nav class="menu__nav">
             <div class="menu container">
-                <a class="menu__logo" href="#">
-                    <img src="https://placehold.co/100x80" alt="Logo van Dr. Greenthumb">
+                <a class="menu__logo" href="index.html">
+                    <img src="assets/logo.webp" alt="Dr. Greenthumb">
                 </a>
                 <ul class="menu__list">
                     <li class="menu__list-item">
-                        <a class="menu__list-link" href="#price">Prijs</a>
-                    </li class="menu__list-item">
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#description">Omschrijving</a>
+                        <a class="menu__list-link btn--quaternary" href="index.html#products">Producten</a>
                     </li>
                     <li class="menu__list-item">
-                        <a class="menu__list-link" href="#related-product">Gerelateerde producten</a>
+                        <a class="menu__list-link btn--quaternary" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <header class="banner">
             <div class="banner__media">
-                <img src="assets/banner.jpg" alt="Welkom bij Dr. Greenthumb's Tuinier Winkel, de beste online tunier winkel van Nederland!" class="banner__img">
+                <img alt="Welkom bij Dr. Greenthumb's Tuinier Winkel, de beste online tunier winkel van Nederland!" class="banner__img"
+                src="assets/banner.jpg"
+                srcset="assets/banner.jpg 1920w, 
+                assets/banner-mobile.png 768w"
+                sizes="100vw">
             </div>
             <div class="banner__caption">
-                <div class="banner__content bg-c--primary">
+                <div class="banner__content bg-c--primary txt-c--default">
                     <h1 class="banner__title">Dr. Greenthumb's Tuinier Winkel</h1>
-                    <p class="banner__intro">De beste online tunier winkel van Nederland!</p>
+                    <p class="banner__intro">De beste online tuinier winkel van Nederland!</p>
                 </div>
-                <a href="#" class="btn btn--secondary">Bekijk mijn assortiment</a>
+                <a href="#" class="btn btn--secondary">Bekijk ons assortiment</a>
             </div>
         </header>
-        <div class="container">
-            <main>
-                <section>
-                    <h2>Onze best-sellers!</h2>
+        <div class="bg-c--default">
+            <main class="container">
+                <section id="products">
+                    <h2 class="txt-c--default">Onze best-sellers!</h2>
                     <div class="card__overview">
-                        <div class="card bg-c--primary">
+                        <a href="#" class="card bg-c--primary txt-c--default">
                             <div class="card__header">
-                                <img src="assets/product-1.jpg" alt="" class="card__img">
+                                <img src="assets/product-1.jpg" alt="Dr. Greenthumb's Broeikas Screener" class="card__img">
                             </div>
                             <div class="card__body">
-                                <h3 class="card__title">Product 1</h3>
-                                <div class="card__rating">**</div>
-                                <p class="card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ut nulla id eius, neque excepturi possimus molestiae fugiat voluptatibus similique harum praesentium saepe assumenda cum earum, dolor, commodi quia minus?</p>
+                                <h3 class="card__title">Dr. Greenthumb's Broeikas Screener</h3>
+                                <div class="card__rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="card__content">Met onze "state-of-the-art" 100cm x 200cm x 300 cm broeikas creëer de perfecte omgeving voor jouw planten! Gemaakt van verstevigd duurzaam materiaal en komt met een controller om de lichtspectrum aan te passen wat doorheen schijnt.</p>
                             </div>
                             <div class="card__footer">
-                                <a href="" class="card__btn btn btn--secondary">Link</a>
+                                <span class="card__btn btn btn--secondary">Link</span>
                             </div>
-                        </div>
-                        <div class="card bg-c--primary">
+                        </a>
+                        <a href="#" class="card bg-c--primary txt-c--default">
                             <div class="card__header">
-                                <img src="assets/product-2.webp" alt="" class="card__img">
+                                <img src="assets/product-2.webp" alt="Dr. Greenthumb's Award Winnende Tomaten" class="card__img">
                             </div>
                             <div class="card__body">
-                                <h3 class="card__title">Product 2</h3>
-                                <div class="card__rating">*****</div>
-                                <p class="card__content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui deleniti fuga ex aliquid ut, iste accusamus distinctio adipisci illum eius error suscipit ducimus veritatis iure sapiente vero. Ex, sapiente corporis. Soluta ut nulla id eius, neque excepturi possimus molestiae fugiat voluptatibus similique harum praesentium saepe assumenda cum earum, dolor, commodi quia minus? Non iste unde cumque ratione veniam, quam exercitationem officia dicta distinctio ex, modi, ab dolorem beatae tenetur. Voluptas iste sit blanditiis quis!</p>
+                                <h3 class="card__title">Dr. Greenthumb's Award Winnende Tomaten</h3>
+                                <div class="card__rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="card__content">Voor 5 jaar op rij hebben we "The Cultivator Award" gewonnen voor onze tomaten die zowel binnen als buiten kan groeien, pestbestendig en hoge oogst opbrengst.</p>
                             </div>
                             <div class="card__footer">
-                                <a href="" class="card__btn btn btn--secondary">Link</a>
+                                <span class="card__btn btn btn--secondary">Link</span>
                             </div>
-                        </div>
-                        <div class="card bg-c--primary">
+                        </a>
+                        <a href="#" class="card bg-c--primary txt-c--default">
                             <div class="card__header">
-                                <img src="assets/product-3.webp" alt="" class="card__img">
+                                <img src="assets/product-3.webp" alt="Dr. Greenthumb's Watersproeier" class="card__img">
                             </div>
                             <div class="card__body">
-                                <h3 class="card__title">Product 3</h3>
-                                <div class="card__rating">***</div>
-                                <p class="card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iste unde cumque ratione veniam, quam exercitationem officia dicta distinctio ex, modi, ab dolorem beatae tenetur. Voluptas iste sit blanditiis quis!</p>
+                                <h3 class="card__title">Watersproeier</h3>
+                                <div class="card__rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="card__content">Met een lange buis om direct de aarde te wateren. Komt met verschillende sproeistanden.</p>
                             </div>
                             <div class="card__footer">
-                                <a href="" class="card__btn btn btn--secondary">Link</a>
+                                <span class="card__btn btn btn--secondary">Link</span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </section>
             </main>
         </div>
         <footer>
             <div class="footer__container container">
-                <div class="footer__contanct">
-                    <img src="https://placehold.co/100x80" alt="" class="footer__logo">
+                <div class="footer__contact">
+                    <img src="/assets/logo-footer.webp" alt="Dr. Greenthumb" class="footer__logo">
                     <p>Copyright &copy; 2024 Youssri de Grebber</p>
                     <ul class="footer__social">
                         <li>
-                            <a href="" class="social">
-                                <i class="fa-brands fa-linkedin-in"></i>
+                            <a href="//instagram.com" target="_blank" class="social btn btn--quaternary">
+                                <i class="fa-brands fa-instagram"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="" class="social">
-    
+                            <a href="//x.com" target="_blank" class="social btn btn--quaternary">
+                                <i class="fa-brands fa-x-twitter"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="" class="social">
-    
+                            <a href="//facebook.com" target="_blank"  class="social btn btn--quaternary">
+                                <i class="fa-brands fa-facebook-f"></i>
                             </a>
                         </li>
                     </ul>
@@ -115,16 +134,16 @@
                 <nav class="footer__menu">
                     <ul class="footer__menu-list">
                         <li class="footer__menu-item">
-                            <a class="footer__menu-link" href="#">Privacy Policy</a>
+                            <a class="footer__menu-link btn--quaternary" href="#">Privacy Policy</a>
                         </li>
                         <li class="footer__menu-item">
-                            <a class="footer__menu-link" href="#">Terms & Conditions</a>
+                            <a class="footer__menu-link btn--quaternary" href="#">Terms & Conditions</a>
                         </li>
                         <li class="footer__menu-item">
-                            <a class="footer__menu-link" href="#">Cookie Policy</a>
+                            <a class="footer__menu-link btn--quaternary" href="#">Cookie Policy</a>
                         </li>
                         <li class="footer__menu-item">
-                            <a class="footer__menu-link" href="#">Contact</a>
+                            <a class="footer__menu-link btn--quaternary" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </nav>

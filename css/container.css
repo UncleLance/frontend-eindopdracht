@@ -1,6 +1,11 @@
 .container {
     width: 100%;
     margin: 0 auto;
+    padding: 0 var(--gutter-size);
+}
+
+.container--no-gutter {
+    padding: 0;
 }
 
 @media (min-width: 35em) {

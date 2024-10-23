@@ -1,37 +1,120 @@
 
 .menu {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    height: var(--menu-height);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .menu__nav {
     background-color: var(--color-quaternary);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
 }
 
 .menu__logo {
-    height: var(--menu-height);
+    /* height: var(--menu-height); */
 }
 
 .menu__logo img {
     height: var(--menu-height);
+    padding: 5px;
 }
 
 .menu__list {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
     list-style: none;
+    height: 100%;
 }
 
 .menu__list-item {
     display: block;
     height: 100%;
+    width: 100%;
+    margin-top: 15px;
 }
 
 .menu__list-link {
     display: inline-flex;
     height: 100%;
     align-items: center;
-    padding: 5px 15px;
+    padding: 15px;   
+    color: var(--white);
+    width: 100%;
+    justify-content: center;
+    transition: ease-in-out 200ms;
+}
+
+/* Small devices (portrait tablets and large phones, 600px) */
+@media only screen and (min-width: 37.5em) {
+
+}
+
+/* Medium devices (landscape tablets, 768px) */
+@media only screen and (min-width: 48em) {
+    .menu {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        /* height: var(--menu-height); */
+    }
+
+    .menu__logo {
+        animation-name: slide-rtl;
+        animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        animation-duration: 1000ms;
+    }
+
+    .menu__list { 
+        justify-content: flex-end;
+        align-items: initial;
+        flex-direction: row;
+
+        animation-name: slide-ltr;
+        animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        animation-duration: 1000ms;
+    }
+
+    .menu__list-item {
+        width: initial;
+        margin-top: 0;
+    }
+
+    .menu__list-link {
+        padding: 5px 15px; 
+    }
+}
+
+/* Large devices (laptops/desktops, 992px) */
+@media only screen and (min-width: 62em) {
     
+}
+
+/* Extra large devices (large laptops and desktops, 1200px) */
+@media only screen and (min-width: 75em) {
+
+}
+
+@keyframes slide-rtl {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-ltr {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

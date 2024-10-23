@@ -49,6 +49,10 @@
         --color-quaternary: var(--pine-cone);
     }
 
+    .txt-c--default {
+        color: var(--nero);
+    }
+
     .txt-c--primary {
         color: var(--color-primary);
     }
@@ -63,6 +67,10 @@
 
     .txt-c--quaternary {
         color: var(--color-quaternary);
+    }
+
+    .bg-c--default {
+        background-color: var(--white);
     }
 
     .bg-c--primary {
@@ -90,6 +98,10 @@
         --color-quaternary: var(--space-shuttle);
     }
 
+    .txt-c--default {
+        color: var(--white);
+    }
+
     .txt-c--primary {
         color: var(--color-primary);
     }
@@ -104,6 +116,10 @@
 
     .txt-c--quaternary {
         color: var(--color-quaternary);
+    }
+
+    .bg-c--default {
+        background-color: var(--nero);
     }
 
     .bg-c--primary {

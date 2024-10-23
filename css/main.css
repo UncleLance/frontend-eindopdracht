@@ -8,14 +8,18 @@
 @import "colors.css";
 @import "buttons.css";
 
+:root {
+    --menu-height: 100px;
+    --menu-height-mobile: 230px;
+    --gutter-size: 15px;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-:root {
-    --menu-height: 80px;
+    scroll-behavior: smooth;
+    scroll-margin-top: var(--menu-height-mobile);
 }
 
 html {
@@ -23,5 +27,35 @@ html {
 }
 
 section {
-    padding: 60px 0;
+    padding: calc(var(--gutter-size) * 4) 0;
+}
+
+body {
+    padding-top: var(--menu-height-mobile);
+}
+
+/* Small devices (portrait tablets and large phones, 600px) */
+@media only screen and (min-width: 37.5em) {
+
+}
+
+/* Medium devices (landscape tablets, 768px) */
+@media only screen and (min-width: 48em) {
+    * {
+        scroll-margin-top: var(--menu-height);
+    }
+
+    body {
+        padding-top: var(--menu-height);
+    }
+}
+
+/* Large devices (laptops/desktops, 992px) */
+@media only screen and (min-width: 62em) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px) */
+@media only screen and (min-width: 75em) {
+
 }

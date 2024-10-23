@@ -1,7 +1,7 @@
 form {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 15px;
+    row-gap: calc(var(--gutter-size) * 2);
 }
 
 label, legend {
@@ -15,12 +15,7 @@ label, legend {
     flex-direction: column;
     flex: 0 0 100%;
     max-width: 100%;
-    padding: 0 7.5px;
-}
-
-.form__group--half {
-    flex: 0 0 50%;
-
+    padding: 0 calc(var(--gutter-size) / 2);
 }
 
 .form__groupset {
@@ -43,9 +38,52 @@ label, legend {
 /* Inputs */
 
 .input__text, .input__datetime, select, textarea{
-    padding: 7.5px;
+    padding: 15px;
+    font-family: var(--default-font);
+    border: 1px solid var(--coffee);
+    border-radius: 6px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
 }
 
 fieldset {
     border: none;
+}
+
+/* Small devices (portrait tablets and large phones, 600px) */
+@media only screen and (min-width: 37.5em) {
+
+}
+
+/* Medium devices (landscape tablets, 768px) */
+@media only screen and (min-width: 48em) {
+    .form__group--half {
+        flex: 0 0 50%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px) */
+@media only screen and (min-width: 62em) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px) */
+@media only screen and (min-width: 75em) {
+
+}
+
+@media (prefers-color-scheme: light) {
+    .input__text, .input__datetime, select, textarea {
+        background-color: var(--white);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .input__text, .input__datetime, select, textarea {
+        background-color: var(--nero);
+        color: var(--white);
+    }
 }

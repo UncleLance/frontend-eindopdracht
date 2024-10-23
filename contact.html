@@ -13,51 +13,50 @@
     <body>
         <nav class="menu__nav">
             <div class="menu container">
-                <a class="menu__logo" href="#">
-                    <img src="https://placehold.co/100x80" alt="Logo">
+                <a class="menu__logo" href="index.html">
+                    <img src="assets/logo.webp" alt="Dr. Greenthumb">
                 </a>
                 <ul class="menu__list">
                     <li class="menu__list-item">
-                        <a class="menu__list-link" href="#price">Prijs</a>
-                    </li class="menu__list-item">
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#description">Omschrijving</a>
+                        <a class="menu__list-link btn--quaternary" href="index.html#products">Producten</a>
                     </li>
                     <li class="menu__list-item">
-                        <a class="menu__list-link" href="#related-product">Gerelateerde producten</a>
+                        <a class="menu__list-link btn--quaternary" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
-            <header class="banner">
-                <div class="banner__media">
-                    
+        <header class="banner banner--half">
+            <div class="banner__media">
+                <img src="assets/banner-contact.jpg" srcset="assets/banner-contact.jpg 1920w, assets/banner-contact-mobile.jpg 768w" sizes="100vw" alt="Heeft u vragen? Ik help u graag!" class="banner__img">
+            </div>
+            <div class="banner__caption">
+                <div class="banner__content bg-c--primary txt-c--default">
+                    <h1 class="banner__title">Contact</h1>
+                    <p class="banner__intro">Heeft u vragen? Neem contact met mij op!</p>
                 </div>
-                <div class="container banner__caption">
-                    <h1 class="banner__title"></h1>
-                    <p class="banner__intro"></p>
-                </div>
-            </header>
-        <div class="container">
-            <main>
-                <section>
-                    <h2>Form</h2>
+            </div>
+        </header>
+        <div class="bg-c--default">
+            <main class="container">
+                <section class="txt-c--default">
+                    <h2>Contact formulier</h2>
                     <form action="/#" method="post">
                         <div class="form__group form__group--half">
                             <label for="firstname">Voornaam</label>
-                            <input name="firstname" id="firstname" type="text" class="input__text" placeholder="Voornaam" aria-placeholder="Voornaam">
+                            <input name="firstname" id="firstname" type="text" class="input__text" placeholder="Voornaam">
                         </div>
                         <div class="form__group form__group--half">
                             <label for="lastname">Achternaam</label>
-                            <input name="lastname" id="lastname" type="text" class="input__text" placeholder="Achternaam" aria-placeholder="Achternaam">
+                            <input name="lastname" id="lastname" type="text" class="input__text" placeholder="Achternaam">
                         </div>
                         <div class="form__group">
                             <label for="email">E-mail</label>
-                            <input name="email" id="email" type="email" class="input__text" placeholder="E-mail" aria-placeholder="E-mail">
+                            <input name="email" id="email" type="email" class="input__text" placeholder="E-mail">
                         </div>
                         <div class="form__group form__group--half">
                             <label for="city">Woonplaats</label>
-                            <input name="city" id="city" type="text" class="input__text" placeholder="Woonplaats" aria-placeholder="Woonplaats">
+                            <input name="city" id="city" type="text" class="input__text" placeholder="Woonplaats">
                         </div>
                         <div class="form__group form__group--half">
                             <label for="birthdate">Geboortedatum</label>
@@ -66,18 +65,15 @@
                         <div class="form__group">
                             <label for="subject">Onderwerp</label>
                             <select name="subject" id="subject">
-                                <option>Kies onderwerp van het bericht...</option>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                                <option value="">4</option>
+                                <option>Kies een onderwerp van het bericht...</option>
+                                <option value="">Klantenservice</option>
+                                <option value="">Retoureren</option>
+                                <option value="">Anders</option>
                             </select>
                         </div>
                         <div class="form__group">
                             <label for="message">Bericht</label>
-                            <textarea name="message" id="message">
-
-                            </textarea>
+                            <textarea name="message" id="message" placeholder="Bericht"></textarea>
                         </div>
                         <fieldset class="form__group">
                             <legend>Inschrijven voor nieuwsbrief?</legend>
@@ -99,7 +95,7 @@
                             </div>
                         </div>
                         <div class="form__group">
-                            <input type="submit" value="Verzenden" class="input__submit btn">
+                            <input type="submit" value="Verzenden" class="input__submit btn btn--secondary">
                         </div>
                     </form>
                 </section>
@@ -107,23 +103,23 @@
         </div>
         <footer>
             <div class="footer__container container">
-                <div class="footer__contanct">
-                    <img src="https://placehold.co/100x80" alt="" class="footer__logo">
+                <div class="footer__contact">
+                    <img src="/assets/logo-footer.webp" alt="Dr. Greenthumb" class="footer__logo">
                     <p>Copyright &copy; 2024 Youssri de Grebber</p>
                     <ul class="footer__social">
                         <li>
-                            <a href="" class="social">
-                                <i class="fa-brands fa-linkedin-in"></i>
+                            <a href="//instagram.com" target="_blank" class="social btn btn--quaternary">
+                                <i class="fa-brands fa-instagram"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="" class="social">
-    
+                            <a href="//x.com" target="_blank" class="social btn btn--quaternary">
+                                <i class="fa-brands fa-x-twitter"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="" class="social">
-    
+                            <a href="//facebook.com" target="_blank"  class="social btn btn--quaternary">
+                                <i class="fa-brands fa-facebook-f"></i>
                             </a>
                         </li>
                     </ul>
@@ -131,16 +127,16 @@
                 <nav class="footer__menu">
                     <ul class="footer__menu-list">
                         <li class="footer__menu-item">
-                            <a class="footer__menu-link" href="#">Privacy Policy</a>
+                            <a class="footer__menu-link btn--quaternary" href="#">Privacy Policy</a>
                         </li>
                         <li class="footer__menu-item">
-                            <a class="footer__menu-link" href="#">Terms & Conditions</a>
+                            <a class="footer__menu-link btn--quaternary" href="#">Terms & Conditions</a>
                         </li>
                         <li class="footer__menu-item">
-                            <a class="footer__menu-link" href="#">Cookie Policy</a>
+                            <a class="footer__menu-link btn--quaternary" href="#">Cookie Policy</a>
                         </li>
                         <li class="footer__menu-item">
-                            <a class="footer__menu-link" href="#">Contact</a>
+                            <a class="footer__menu-link btn--quaternary" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </nav>

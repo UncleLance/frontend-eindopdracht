@@ -2,6 +2,12 @@
 .banner {
     position: relative;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.banner--half {
+    min-height: 50vh;
 }
 
 .banner__media {
@@ -22,10 +28,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
     text-align: center;
+    position: relative;
+
+    animation-name: slide-top;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation-duration: 1000ms;
 }
 
 .banner__content {
     padding: 15px; 
     margin-bottom: 15px;
+}
+
+@keyframes slide-top {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
