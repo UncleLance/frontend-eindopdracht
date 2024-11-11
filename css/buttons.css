@@ -17,6 +17,7 @@
 
     .btn--primary:hover {
         background-color: color-mix(in srgb, var(--color-secondary) 85%, var(--black));
+        border: 1px solid var(--color-primary);
     }
 
     .btn--secondary {
@@ -26,6 +27,7 @@
 
     .btn--secondary:hover {
         background-color: color-mix(in srgb, var(--color-secondary) 85%, var(--black));
+        border: 1px solid var(--color-secondary);
     }
 
     .btn--tertiary {
@@ -35,6 +37,7 @@
 
     .btn--tertiary:hover {
         background-color: color-mix(in srgb, var(--color-tertiary) 85%, var(--black));
+        border: 1px solid var(--color-tertiary);
     }
 
     .btn--quaternary {
@@ -44,6 +47,7 @@
 
     .btn--quaternary:hover {
         background-color: color-mix(in srgb, var(--color-quaternary) 85%, var(--black));
+        border: 1px solid var(--color-quaternary);
     }
 }
 
@@ -55,6 +59,7 @@
 
     .btn--primary:hover {
         background-color: color-mix(in srgb, var(--color-secondary) 85%, var(--white));
+        border: 1px solid var(--color-primary);
     }
 
     .btn--secondary {
@@ -64,6 +69,7 @@
 
     .btn--secondary:hover {
         background-color: color-mix(in srgb, var(--color-secondary) 85%, var(--white));
+        border: 1px solid var(--color-secondary);
     }
 
     .btn--tertiary {
@@ -73,6 +79,7 @@
 
     .btn--tertiary:hover {
         background-color: color-mix(in srgb, var(--color-tertiary) 85%, var(--white));
+        border: 1px solid var(--color-tertiary);
     }
 
 
@@ -83,5 +90,6 @@
 
     .btn--quaternary:hover {
         background-color: color-mix(in srgb, var(--color-quaternary) 85%, var(--white));
+        border: 1px solid var(--color-quaternary);
     }
 }
